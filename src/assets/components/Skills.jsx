@@ -7,20 +7,28 @@ import androidStudioIcon from "../images/android-studio.png";
 import androidIcon from "../images/android.png";
 import cplusplusIcon from "../images/c++.png";
 import firebaseIcon from "../images/firebase.png";
-import googleCloudPlatformIcon from "../images/google-cloud-platform.png";
 import reactIcon from "../images/react.png";
 import javaIcon from "../images/java.png";
 import kotlinIcon from "../images/kotlin.png";
 import mongoDBIcon from "../images/mongo-db.png";
 import nodeIcon from "../images/node.png";
-import postgreSQLIcon from "../images/postgresql.png";
 import postmanIcon from "../images/postman.png";
 import pythonIcon from "../images/python.png";
 import vsCodeIcon from "../images/vs-code.png";
 import gitIcon from "../images/git.png";
 import githubIcon from "../images/github.png";
 import "../styles/Skills.css";
-
+import adobexd from "../images/adobe_xd.png"
+import DotNet from "../images/dotnet.png"
+import flutter from "../images/flutter.png"
+import laravel from "../images/laravel.png";
+import php from "../images/php.png";
+import mysql from '../images/mysql.png';
+import SpringBoot from '../images/springboot.png';
+import VisualStudio from '../images/Visual_Studio.png';
+import vue from '../images/vue.png';
+import angular from '../images/angular.jpg';
+import Typescript from '../images/Typescript.png';
 const Skills = () => {
   const skills = [
     {
@@ -35,10 +43,18 @@ const Skills = () => {
         { name: "React", image: reactIcon },
         { name: "HTML", image: htmlIcon },
         { name: "CSS", image: cssIcon },
-        { name: "PostgreSQL", image: postgreSQLIcon },
         { name: "MongoDB", image: mongoDBIcon },
         { name: "Firebase", image: firebaseIcon },
         { name: "Android", image: androidIcon },
+        { name: ".Net", image: DotNet },
+        { name: "Flutter", image: flutter },
+        { name: "Laravel", image: laravel },
+        { name: "php", image: php },
+        { name: "mysql", image: mysql },
+        { name: "SpringBoot", image: SpringBoot },
+        { name: "VueJS", image: vue },
+        { name: "Angular", image: angular },
+        { name: "Typescript", image: Typescript },
       ],
     },
     {
@@ -46,10 +62,11 @@ const Skills = () => {
       items: [
         { name: "VS Code", image: vsCodeIcon },
         { name: "Postman", image: postmanIcon },
-        { name: "Google Cloud Platform", image: googleCloudPlatformIcon },
         { name: "Git", image: gitIcon },
         { name: "Github", image: githubIcon },
         { name: "Android Studio", image: androidStudioIcon },
+        { name: "Adobe XD", image: adobexd },
+        { name: "Visual Studio", image: VisualStudio },
       ],
     },
   ];
@@ -67,10 +84,7 @@ const Skills = () => {
         <div className="section-text">
           <h1>Let me say something!</h1>
           <p>
-            Developing apps is my passion. I've explored various fields, but
-            backend and frontend development are my true calling. These areas
-            let me create innovative applications and enhance user experiences
-            across devices. Scroll down to see my technical skills and tools.
+          As an ambitious IT student, I am eager to learn and grow in the field of technology. With a passion for problem-solving and a strong aptitude for learning new skills, I am determined to make a meaningful impact in the industry.
           </p>
         </div>
       </div>

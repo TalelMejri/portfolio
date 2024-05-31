@@ -5,61 +5,37 @@ import profileImage from "../images/projects.png";
 
 const projects = [
   {
-    name: "Library Management System",
-    image: require("../images/projects/library.png"),
-    technologies: ["JavaScript", "Express.js", "Node.js", "PostgreSQL"],
-    date: "Mar 2024",
-    url: "https://github.com/mostafadelgouda/Library-Management-System",
+    name: "Simulation Du Jeu Heroes Magic War En Graphique 2D",
+    image: require("../images/projects/magic_war.png"),
+    technologies: ["C", "SDL"],
+    date: "2021",
+    url: "https://github.com/TalelMejri/Heroes_Magic_War_Mode_Graphique-2D-",
+    LinkYoutube: "https://www.youtube.com/watch?v=y4GEPDAkAJ0&t=409s",
   },
   {
-    name: "Blogs",
-    image: require("../images/projects/blogs.jpeg"),
-    technologies: ["JavaScript", "Express.js", "Node.js", "MongoDB", "JWT"],
-    date: "Feb 2024",
-    url: "https://github.com/mostafadelgouda/Blog",
+    name: "Social Media App",
+    image: require("../images/projects/social_media.png"),
+    technologies: ["JavaScript", "HTML", "CSS", "PHP", "MYSQL"],
+    date: "2022",
+    url: "https://github.com/TalelMejri/Social-Media-project",
+    LinkYoutube: "https://www.youtube.com/watch?v=jhM85mevtjs",
   },
   {
-    name: "Product Calculator",
-    image: require("../images/projects/product-calculator.png"),
+    name: "FoodBundle",
+    image: require("../images/projects/food.png"),
     technologies: [
-      "Kotlin",
-      "Android",
-      "Jetpack Compose",
-      "SQLite",
-      "Material Design",
+      "Laravel",
+      "VueJs",
+      "Vuetify",
+      "JWT",
+      "MYSQL",
     ],
-    date: "Jan 2024",
-    url: "https://github.com/mostafadelgouda/ProductCalculator",
+    date: "jan 2023",
+    url: "https://github.com/TalelMejri/FoodBundle",
+    LinkYoutube: "https://www.youtube.com/watch?v=iHbIvqqrqns&t=199s",
+
   },
-  {
-    name: "Albums",
-    image: require("../images/projects/albums.png"),
-    technologies: ["Kotlin", "Android", "Jetpack Compose", "API"],
-    date: "Dec 2024",
-    url: "https://github.com/mostafadelgouda/Albums",
-  },
-  {
-    name: "Sign Language Conversation",
-    image: require("../images/projects/sign-language-conversation.jpg"),
-    technologies: [
-      "Python",
-      "Tkinter",
-      "Deep Learning",
-      "Neural Networks",
-      "VGG16",
-      "PyAudio",
-      "Blender",
-    ],
-    date: "May 2022",
-    url: "https://drive.google.com/drive/folders/12fMyBN_a5_MdeSQUdC_TNQrScZWPGVPI?usp=sharing",
-  },
-  {
-    name: "Maze Game",
-    image: require("../images/projects/maze.png"),
-    technologies: ["C++", "OpenGL", "3-d Design"],
-    date: "Jan 2022",
-    url: "https://github.com/mostafadelgouda/Maze-Game",
-  },
+ 
 ];
 
 const Projects = () => {
@@ -69,10 +45,7 @@ const Projects = () => {
         <div className="section-text">
           <h1>Want to see my projects?</h1>
           <p>
-            Below, you'll find a showcase of some of my recent projects. Each
-            project represents a unique journey where I've applied my skills and
-            creativity to develop innovative solutions. Take a look around and
-            explore the diverse range of projects I've worked on.
+            Here is a selection of my recent projects, each reflecting a distinct journey where I have applied my expertise and creativity to develop cutting-edge solutions. These projects demonstrate my ability to tackle diverse challenges and innovate across various domains. Feel free to explore and discover the wide array of work I have been involved in.
           </p>
         </div>
         <div className="section-image-container">
@@ -106,6 +79,13 @@ const Projects = () => {
                   <li key={idx}>{tech}</li>
                 ))}
               </ul>
+              {project.LinkYoutube && (
+                <div>
+                  <a href={project.LinkYoutube} target="_blank" id="content_youtube_btn" rel="noopener noreferrer">
+                    <button className="project-button">Watch on Youtube</button>
+                  </a>
+                </div>
+              )}
               <p className="project-date">{project.date}</p>
             </a>
           ))}
