@@ -1,0 +1,77 @@
+.bot-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 60, 0.3); /* Slightly transparent white */
+    padding: 0;
+    margin-right: 5rem;
+    position: fixed; /* Fixed position */
+    right: 0;
+    bottom: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it is above other content */
+    border-top-left-radius: 15px; /* Adjust the value as needed */
+    border-top-right-radius: 15px; /* Adjust the value as needed */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  }
+  .bot-bar:hover {
+    background: rgba(0, 0, 50, .9);
+  }
+  
+  .bot-bar-center {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bot-bar-center ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bot-bar-center ul li {
+    margin: 0 1rem;
+  }
+  
+  .bot-bar-center ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+    transition: color 0.3s ease;
+  }
+  
+  .bot-bar-center ul li a:hover {
+    color: #ff6347; /* Tomato color */
+    
+  }
+  
+  
+  @media (max-width: 768px) {
+    .bot-bar {
+      margin-right: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bot-bar-center ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bot-bar-center ul li {
+      margin: 0.5rem 0;
+    }
+  
+    .bot-bar-right {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .link .text {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('./assets/fonts/Rubik-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+

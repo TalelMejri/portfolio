@@ -1,0 +1,75 @@
+
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between boxes */
+}
+
+.skills-box {
+  flex: 0.5 0.5 calc(100% - 20px); /* Two boxes per row, subtracting the gap */
+  padding: 20px;
+  
+}
+
+.skills-box h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 0;
+}
+
+.skills-box ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* This will center the items horizontally */
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Rubik', sans-serif;
+  margin: 1rem;
+}
+.skill-item:hover{
+    background-color: rgba(255, 0, 0, 0.7);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+}
+
+
+.skill-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.skill-item span {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-methods li a {
+
+      margin: 10px;
+    }
+    .skill-item {
+
+      padding: 10px;
+      margin: 10px;
+    }
+    .skill-icon {
+      font-size: 15px;
+
+    }
+
+
+}

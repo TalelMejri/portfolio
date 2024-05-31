@@ -1,0 +1,239 @@
+/* Adjust scrollbar styles */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #630000;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #810000;
+  border-radius: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  background-image: url("../images/background4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Common styles */
+.container {
+  size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 32px; /* Converted from 2rem */
+}
+
+.section-text {
+  flex: 1;
+  max-width: 800px; /* Converted from 50rem */
+}
+
+.section-text h2 {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+.section-text h1 {
+  margin: 8px 0; /* Converted from 0.5rem */
+  font-family: "Rubik", sans-serif;
+  font-size: 48px; /* Converted from 3rem */
+  color: white;
+}
+
+.section-text p {
+  padding: 32px 80px; /* Converted from 2rem 5rem */
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px; /* Converted from 1.2rem */
+  color: white;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.typewriter-container {
+  font-family: "Rubik", sans-serif;
+  padding: 0 30px;
+  font-size: 32px; /* Converted from 2rem */
+  color: white;
+}
+
+.section-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-section {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px; /* Converted from 2rem */
+  padding-bottom: 32px; /* Converted from 2rem */
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px; /* Converted from 1.2rem */
+  color: white;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.section-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-image {
+  max-width: 80%;
+  height: auto;
+  padding: 80px; /* Converted from 5rem */
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.content-text {
+  flex: 1;
+  padding: 80px; /* Converted from 5rem */
+  max-width: 100%;
+}
+
+.content-text h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px; /* Converted from 2rem */
+  color: white;
+  margin: 0;
+}
+
+.content-text h1 {
+  margin: 16px 0; /* Converted from 0.5rem */
+}
+
+.content-text p {
+  margin: 16px 0; /* Converted from 0.5rem */
+}
+
+
+.section-text {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  align-items: center; /* Center align items horizontally */
+  justify-content: center;
+}
+
+.section-text a {
+  display: block;
+  margin: 10px;
+  padding: 10px; /* Add padding for better button appearance */
+  font-size: 1.25rem;
+  font-family: "Rubik", sans-serif; /* Apply the custom font */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+  background-color: rgba(0, 0, 60, 0.6);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Initial light border effect */
+}
+
+.section-text a:hover {
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.8); /* More intense light effect on hover */
+}
+@media screen and (max-width: 768px) {
+
+
+  .container {
+    padding: 0;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+
+  .section {
+    display: table-column;
+    padding: 0;
+  }
+  .section-text {
+    padding: 0;
+    max-width: 100%; /* Allow text to occupy full width */
+  }
+  .section-text h1 {
+    padding-top: 30px 0 30px 30px;
+    font-size: 25px;
+  }
+  .section-text h2 {
+    padding-top: 30px
+  }
+  .section-text p {
+    text-align: left;
+    padding: 32px 32px;
+    font-size: 16px;
+  }
+
+  .section-image-container {
+    justify-content: center; /* Center image on smaller screens */
+  }
+
+  .section-image {
+    max-width: 100%; /* Allow image to occupy full width */
+    padding: 2rem 0; /* Adjust padding for spacing */
+  }
+
+  .content-text {
+    padding: 32px; /* Converted from 5rem */
+    font-size: 16px;
+  }
+  .content-text p {
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .content-text h2 {
+    font-size: 25px; /* Converted from 2rem */
+
+  }
+  .section-text a{
+    font-size: 13px;
+  }
+  
+
+}
+

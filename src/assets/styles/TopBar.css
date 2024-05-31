@@ -1,0 +1,77 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 60, 0.3);
+    padding: 0;
+    margin-left: 5rem;
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it is above other content */
+    border-bottom-left-radius: 15px; /* Adjust the value as needed */
+    border-bottom-right-radius: 15px; /* Adjust the value as needed */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  }
+  .topbar:hover {
+    background: rgba(0, 0, 50, .9);
+  }
+  
+  
+  
+  .topbar-center {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .topbar-center ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .topbar-center ul li {
+    margin: 0 1rem;
+  }
+  
+  .topbar-center ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+    transition: color 0.3s ease;
+  }
+  
+  .topbar-center ul li a:hover {
+    color: #ff6347; /* Tomato color */
+    
+  }
+  
+  
+  @media (max-width: 768px) {
+    .topbar {
+      margin-left: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .topbar-center ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .topbar-center ul li {
+      margin: 0.5rem 0;
+    }
+  
+    .topbar-right {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .link .text {
+      display: none;
+    }
+  }

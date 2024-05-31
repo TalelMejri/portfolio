@@ -1,0 +1,18 @@
+
+.footer {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    bottom: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif; /* Use the custom font */
+    font-size: 1rem;
+  }
+  
+  .footer p {
+    margin: 0;
+    margin-left: 5rem;
+  }
